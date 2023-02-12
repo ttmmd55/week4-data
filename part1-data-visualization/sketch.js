@@ -63,7 +63,7 @@ function drawBar() {
     fill(255); 
     textAlign(CENTER, TOP); 
     text(item.name, rX+rWidth/2-1, rY+10); 
-    text("CH0005R's Airdata",width/2,15);
+    text("Afternoon to evening CO2 concentrations in Schwyz, Switzerland",width/2,15);
   }  
 
 }

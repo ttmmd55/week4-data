@@ -4,4 +4,14 @@ html, body {
 }
 canvas {
   display: block;
+  margin: auto;
+  padding: auto;
+}
+p{
+  color: blue;
+  margin: auto;
+}
+
+#title1{
+font-size: 25px;
 }

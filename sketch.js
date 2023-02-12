@@ -8,7 +8,6 @@ let airData;
 
 function setup() {
   createCanvas(600, 600);
-  canvas.parent("sketch-container"); //move our canvas inside this HTML element
 noLoop();
    //HAVE YOU TURNED OFF AUTO-REFRESH?
   
@@ -24,8 +23,7 @@ noLoop();
     //loading = false;
      
   drawBar();
-
-
+    
   }).catch(function(err) {
     console.log(`Something went wrong: ${err}`);
   });

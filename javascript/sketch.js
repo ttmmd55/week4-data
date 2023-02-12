@@ -8,6 +8,7 @@ let airData;
 
 function setup() {
   createCanvas(600, 600);
+  canvas.parent("sketch-container"); //move our canvas inside this HTML element
 noLoop();
    //HAVE YOU TURNED OFF AUTO-REFRESH?
   
@@ -23,8 +24,6 @@ noLoop();
     //loading = false;
      
   drawBar();
-    //show text in HTML
-  showText(airData);//add text as html element
 
 
   }).catch(function(err) {
@@ -68,17 +67,5 @@ function drawBar() {
     text(item.name, rX+rWidth/2-1, rY+10); 
     text("Afternoon to evening CO2 concentrations in Schwyz, Switzerland",width/2,15);
   }  
-
-}
-function showText(airData){
-
-  showText("Training text number " + airData);
-  showText(data.airData);
-
-let textContainer = select("#text-container");
-//  textContainer.elt.innerHTML = "";//add this in if you want to replace the text each time
-
-let p = createP(airData);
-p.parent("text-container");
 
 }
